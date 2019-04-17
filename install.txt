@@ -1,0 +1,25 @@
+PS: 
+	i == install, -S == --save-dev;
+
+1 npm i -g vue-cli  //安装vue
+2 vue init webpack [projectName] //基于webpack配置项目
+
+3 cd [projectName]  //进入项目目录
+4 npm i //安装依赖
+5 npm run dev //运行项目
+
+安装sass
+1 npm i node-sass -S
+2 npm i sass-loader -S
+3 npm i style-loader -S
+4 打开build文件夹下面的webpack.base.config.js
+	module.rules.push({ test: /\.scss$/, loaders: ["style", "css", "sass"] } )
+5 在需要用到sass的地方添加 <style lang="scss" scoped="" type="text/css"> 
+
+安装 elementUI ==> npm i element-ui -S
+
+安装报错则删除相应依赖 ==> npm uninstall node-sass
+
+需要删除 node_modules 文件夹时
+1 npm i rimraf -g //安装rimraf依赖
+2 rimraf node_modules //执行删除
