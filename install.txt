@@ -8,6 +8,9 @@ PS:
 4 npm i //安装依赖
 5 npm run dev //运行项目
 
+安装vuex
+npm i vuex --save
+
 安装sass
 1 npm i node-sass -S
 2 npm i sass-loader -S
